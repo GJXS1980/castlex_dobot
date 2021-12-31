@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<launch>
+
+    <!-- 启动机械臂驱动  -->
+  <node pkg="dobot" type="DobotServer" name="DobotServer" args="dobot" />
+
+<!-- 机械臂初始化位置设置服务器start -->
+  <node pkg="dobot" type="dobot_control" name="dobot_control" >
+
+<!--   机械臂初始化坐标参数    --> 
+      <!-- 机械臂初始化的x坐标(笛卡尔坐标系) -->    
+      <param name="init_x" value="200.0" />
+      <!-- 机械臂初始化的y坐标(笛卡尔坐标系) -->      
+      <param name="init_y" value="0.0" />
+      <!-- 机械臂初始化的z坐标(笛卡尔坐标系) -->    
+      <param name="init_z" value="50.0" />
+
+
+<!--   第1个动作    --> 
+      <!-- 做第1个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step1_x" value="200.0" />
+      <!-- 做第1个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step1_y" value="0.0" />
+      <!-- 做第1个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step1_z" value="90.0" />
+
+<!--   第2个动作    --> 
+      <!-- 做第2个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step2_x" value="200.0" />
+      <!-- 做第2个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step2_y" value="0.0" />
+      <!-- 做第2个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step2_z" value="10.0" />
+
+<!--   第3个动作    --> 
+      <!-- 做第3个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step3_x" value="200.0" />
+      <!-- 做第3个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step3_y" value="50.0" />
+      <!-- 做第3个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step3_z" value="10.0" />
+
+
+<!--   第4个动作    --> 
+      <!-- 做第4个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step4_x" value="200.0" />
+      <!-- 做第4个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step4_y" value="-50.0" />
+      <!-- 做第4个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step4_z" value="10.0" />
+
+<!--   第5个动作    --> 
+      <!-- 做第5个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step5_x" value="230.0" />
+      <!-- 做第5个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step5_y" value="-50.0" />
+      <!-- 做第5个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step5_z" value="10.0" />
+
+<!--   第6个动作    --> 
+      <!-- 做第6个动作时机械臂的x坐标(笛卡尔坐标系) -->    
+      <param name="step6_x" value="190.0" />
+      <!-- 做第6个动作时机械臂的y坐标(笛卡尔坐标系) -->      
+      <param name="step6_y" value="-50.0" />
+      <!-- 做第6个动作时机械臂的z坐标(笛卡尔坐标系) -->    
+      <param name="step6_z" value="10.0" />
+
+  </node>
+<!-- 机械臂初始化位置设置服务器end -->
+
+
+
+
+
+</launch>
